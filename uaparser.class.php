@@ -1,15 +1,18 @@
 <?php
 /**
- *
+ * Standalone PHP class to identify browser, engine, OS, CPU, and device type/model based on the User Agent.
+ * All detection rules are based on regular expressions stored in uaparser.class.json.
+ * If a user agent is not provided to the constructor - it will be auto-detected by PHP.
+ * If a user agent is provided to the constructor - it will be used.
  */
 class UAParser {
 	/**
-	 *
+	 * Private variable to store the User Agent for the current class instance.
 	 */
 	private $userAgent;
 
 	/**
-	 *
+	 * Static variable used to store mappings.
 	 */
 	private static $mapping = array(
 		'safari' => array (
@@ -37,12 +40,17 @@ class UAParser {
 	);
 
 	/**
-	 *
+	 * Private static variable used to store all regular expressions used to determine browser, device, os, etc.
+	 * It is filled with contents from the JSON file when the class is used at least once.
 	 */
 	private static $regexes = null;
 
 	/**
-	 *
+	 * Constructor.
+	 * If a user agent is provided to the constructor - it will be used.
+	 * If a user agent is not provided to the constructor - it will be auto-detected by PHP.
+	 * If the $regexes variable is empty - it will be filled from uaparser.class.json.
+	 * @param string $userAgent - user agent for this instance
 	 */
 	function __construct($userAgent = null) {
 		if (empty(self::$regexes)) {
@@ -59,6 +67,8 @@ class UAParser {
 	}
 
 	/**
+	 * Static helper used to determine major browser version from the full version.
+	 * @param string $version - full version string to determine major version
 	 * @return string
 	 */
 	private static function parseMajor($version) {
@@ -69,6 +79,9 @@ class UAParser {
 	}
 
 	/**
+	 * Static helper used to determine if one string is contained in another (case insensitive).
+	 * @param string $str1
+	 * @param string $str2
 	 * @return boolean
 	 */
 	private static function utilHas($str1, $str2) {
@@ -76,6 +89,8 @@ class UAParser {
 	}
 
 	/**
+	 * Static helper used to trim variables from white-spaces.
+	 * @param string $str
 	 * @return string
 	 */
 	private static function utilTrim($str) {
@@ -83,6 +98,8 @@ class UAParser {
 	}
 
 	/**
+	 * Static helper used to turn strings to lowercase.
+	 * @param string $str
 	 * @return string
 	 */
 	private static function utilLowerize($str) {
@@ -90,6 +107,9 @@ class UAParser {
 	}
 
 	/**
+	 * Static helper used to find the correct value based on some mapping.
+	 * @param string $str - string to search for in the map
+	 * @param array $map - map to use
 	 * @return string
 	 */
 	private static function mapperStr($str, $map) {
@@ -108,7 +128,9 @@ class UAParser {
 	}
 
 	/**
-	 *
+	 * Main method used to loop all regular expressions and try to find a match.
+	 * @param string $element - element where the variables will be stored (passed by reference).
+	 * @param string $regularExpressions - list of regular expressions to search for a match.
 	 */
 	private function mapperRegularExpressions(&$element, $regularExpressions) {
 		$matches = null;
@@ -152,6 +174,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get the browser information.
 	 * @return array
 	 */
 	function getBrowser() {
@@ -166,6 +189,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get the CPU information.
 	 * @return array
 	 */
 	function getCPU() {
@@ -177,6 +201,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get the device information.
 	 * @return array
 	 */
 	function getDevice() {
@@ -190,6 +215,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get the engine information.
 	 * @return array
 	 */
 	function getEngine() {
@@ -202,6 +228,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get the OS information.
 	 * @return array
 	 */
 	function getOS() {
@@ -215,6 +242,7 @@ class UAParser {
 	}
 
 	/**
+	 * Getter used to get the current user agent.
 	 * @return string
 	 */
 	function getUA() {
@@ -222,6 +250,7 @@ class UAParser {
 	}
 
 	/**
+	 * Method used to get all information at once.
 	 * @return array
 	 */
 	function getResult() {

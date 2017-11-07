@@ -7,21 +7,25 @@ Initially developed as **ua-parser-js** by Faisal Salman (https://github.com/fai
 # Sample usage
 
 ```php
-...
+$sampleOne = new UAParser('Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G925F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.0 Chrome/38.0.2125.102 Mobile Safari/537.36');
+print_r($sampleOne->getResult());
 ```
 
-# Sample output
-```
-...
+```php
+$sampleTwo = new UAParser();
+print_r($sampleTwo->getBrowser());
+print_r($sampleTwo->getCPU());
+print_r($sampleTwo->getDevice());
+print_r($sampleTwo->getOS());
+print_r($sampleTwo->getEngine());
 ```
 
 # License
 
 Dual licensed under GPLv2 & MIT
 
-Copyright © 2017 Damyan Stanchev <<damyan.stanchev@gmail.com>>
-
-Copyright © 2012-2016 Faisal Salman <<fyzlman@gmail.com>>
+- Copyright © 2017 Damyan Stanchev <<damyan.stanchev@gmail.com>>
+- Copyright © 2012-2016 Faisal Salman <<fyzlman@gmail.com>>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
