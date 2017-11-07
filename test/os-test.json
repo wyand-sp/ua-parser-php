@@ -171,69 +171,6 @@
         }
     },
     {
-        "desc"    : "WebOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Palm OS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "QNX",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Bada",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "RIM Tablet OS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "MeeGo",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Symbian",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
         "desc"    : "Firefox OS",
         "ua"      : "Mozilla/5.0 (Mobile; rv:14.0) Gecko/14.0 Firefox/14.0",
         "expect"  :
@@ -243,48 +180,12 @@
         }
     },
     {
-        "desc"    : "Nintendo",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "PlayStation",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
         "desc"    : "PlayStation 4",
         "ua"      : "Mozilla/5.0 (PlayStation 4 3.00) AppleWebKit/537.73 (KHTML, like Gecko)",
         "expect"  :
         {
             "name"    : "PlayStation",
             "version" : "4"
-        }
-    },
-    {
-        "desc"    : "Mint",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Joli",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
         }
     },
     {
@@ -303,186 +204,6 @@
         {
             "name"    : "Ubuntu",
             "version" : "undefined"
-        }
-    },
-    {
-        "desc"    : "Debian",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "OpenSUSE",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Gentoo",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Arch",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Slackware",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Fedora",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Mandriva",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "CentOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "PCLinuxOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "RedHat",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Zenwalk",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Hurd",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Linux",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "GNU",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Chromium OS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Solaris",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "FreeBSD",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "OpenBSD",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "NetBSD",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "DragonFly",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
         }
     },
     {
@@ -531,93 +252,12 @@
         }
     },
     {
-        "desc"    : "AIX",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Plan9",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "Minix",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "BeOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "OS/2",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "AmigaOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "MorphOS",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
-        "desc"    : "UNIX",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
-        }
-    },
-    {
         "desc"    : "iTunes Windows Vista",
         "ua"      : "iTunes/10.7 (Windows; Microsoft Windows Vista Home Premium Edition Service Pack 1 (Build 6001)) AppleWebKit/536.26.9",
         "expect"  :
         {
             "name"    : "Windows",
             "version" : "Vista"
-        }
-    },
-    {
-        "desc"    : "",
-        "ua"      : "",
-        "expect"  :
-        {
-            "name"    : "",
-            "version" : ""
         }
     },
     {

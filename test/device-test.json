@@ -26,15 +26,6 @@
         }
     },
     {
-        "desc": "HTC Evo Shift 4G",
-        "ua": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Sprint APA7373KT Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0",
-        "expect": {
-            "vendor": "HTC",
-            "model": "Evo Shift 4G",
-            "type": "mobile"
-        }
-    },
-    {
         "desc": "HTC Nexus 9",
         "ua": "Mozilla/5.0 (Linux; Android 5.0; Nexus 9 Build/LRX21R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Mobile Crosswalk/7.36.154.13 Safari/537.36",
         "expect": {
@@ -489,7 +480,8 @@
         "ua": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.22.79313",
         "expect": {
             "vendor": "Google",
-            "model": "Chromecast"
+            "model": "Chromecast",
+            "type": "undefined"
         }
     },
     {
@@ -525,7 +517,8 @@
         "ua": "Mozilla/5.0  (Linux; U; Android 6.0.1; i980 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
         "expect": {
             "vendor": "Generic",
-            "model": "Android 6.0.1"
+            "model": "Android 6.0.1",
+			"type": "undefined"
         }
     },
     {
