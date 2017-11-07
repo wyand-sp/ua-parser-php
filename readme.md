@@ -2,11 +2,11 @@
 
 Standalone PHP class to identify browser, engine, OS, CPU, and device type/model based on the User Agent. This class aims to identify detailed type of web browser, layout engine, operating system, cpu architecture, and device type/model, entirely from user-agent string.
 
-Originally developed as ua-parser-js by Faisal Salman @ https://github.com/faisalman/ua-parser-js as a JS module. Rewritten in PHP.
+Initially developed as **ua-parser-js** by Faisal Salman (https://github.com/faisalman/ua-parser-js) as a JS module. Rewritten in PHP by Damyan Stanchev.
 
 # Sample usage
 
-```html
+```php
 ...
 ```
 
@@ -20,6 +20,7 @@ Originally developed as ua-parser-js by Faisal Salman @ https://github.com/faisa
 Dual licensed under GPLv2 & MIT
 
 Copyright © 2017 Damyan Stanchev <<damyan.stanchev@gmail.com>>
+
 Copyright © 2012-2016 Faisal Salman <<fyzlman@gmail.com>>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
