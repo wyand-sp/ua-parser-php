@@ -75,7 +75,7 @@ class UAParser {
 		if (gettype($version) === 'string') {
 			return explode('.', preg_replace('/[^\d\.]/', '', $version))[0];
 		}
-		return 'undefined';
+		return '';
 	}
 
 	/**
@@ -156,15 +156,15 @@ class UAParser {
 								}
 							} else if (count($q) === 3) {
 								if ($q[1] === 'mapping') {
-									$element[$q[0]] = $match ? self::mapperStr($match, self::$mapping[$q[2]]) : 'undefined';
+									$element[$q[0]] = $match ? self::mapperStr($match, self::$mapping[$q[2]]) : '';
 								} else {
-									$element[$q[0]] = $match ? preg_replace($q[1], $q[2], $match) : 'undefined';
+									$element[$q[0]] = $match ? preg_replace($q[1], $q[2], $match) : '';
 								}
 							} else if (count($q) == 4) {
-								$element[$q[0]] = $match ? call_user_func(array($this, $q[3]), preg_replace($q[1], $q[2], $match)) : 'undefined';
+								$element[$q[0]] = $match ? call_user_func(array($this, $q[3]), preg_replace($q[1], $q[2], $match)) : '';
 							}
 						} else {
-							$element[$q] = !empty($match) ? $match : 'undefined';
+							$element[$q] = !empty($match) ? $match : '';
 						}
 					}
 				}
@@ -179,12 +179,12 @@ class UAParser {
 	 */
 	function getBrowser() {
 		$browser = array(
-			'name' => 'undefined',
-			'version' => 'undefined',
-			'major' => 'undefined'
+			'name' => '',
+			'version' => '',
+			'major' => ''
 		);
 		$this->mapperRegularExpressions($browser, self::$regexes['browser']);
-		$browser['major'] = $browser['version'] == 'undefined' ? 'undefined' : self::parseMajor($browser['version']);
+		$browser['major'] = $browser['version'] == '' ? '' : self::parseMajor($browser['version']);
 		return $browser;
 	}
 
@@ -194,7 +194,7 @@ class UAParser {
 	 */
 	function getCPU() {
 		$cpu = array(
-			'architecture' => 'undefined'
+			'architecture' => ''
 		);
 		$this->mapperRegularExpressions($cpu, self::$regexes['cpu']);
 		return $cpu;
@@ -206,9 +206,9 @@ class UAParser {
 	 */
 	function getDevice() {
 		$device = array(
-			'vendor' => 'undefined',
-			'model' => 'undefined',
-			'type' => 'undefined'
+			'vendor' => '',
+			'model' => '',
+			'type' => ''
 		);
 		$this->mapperRegularExpressions($device, self::$regexes['device']);
 		return $device;
@@ -220,8 +220,8 @@ class UAParser {
 	 */
 	function getEngine() {
 		$engine = array(
-			'name' => 'undefined',
-			'version' => 'undefined'
+			'name' => '',
+			'version' => ''
 		);
 		$this->mapperRegularExpressions($engine, self::$regexes['engine']);
 		return $engine;
@@ -233,8 +233,8 @@ class UAParser {
 	 */
 	function getOS() {
 		$os = array(
-			'name' => 'undefined',
-			'version' => 'undefined'
+			'name' => '',
+			'version' => ''
 		);
 		$this->mapperRegularExpressions($os, self::$regexes['os']);
 		$os['version'] = '' . $os['version'];
@@ -255,12 +255,12 @@ class UAParser {
 	 */
 	function getResult() {
 		return array(
-			'ua' => $this->getUA($this->userAgent),
-			'browser' => $this->getBrowser($this->userAgent),
-			'engine' => $this->getEngine($this->userAgent),
-			'os' => $this->getOS($this->userAgent),
-			'device' => $this->getDevice($this->userAgent),
-			'cpu' => $this->getCPU($this->userAgent)
+			'ua' => $this->getUA(),
+			'browser' => $this->getBrowser(),
+			'engine' => $this->getEngine(),
+			'os' => $this->getOS(),
+			'device' => $this->getDevice(),
+			'cpu' => $this->getCPU()
 		);
 	}
 }

@@ -75,8 +75,8 @@
         "expect"  :
         {
             "name"    : "Avant ",
-            "version" : "undefined",
-            "major"   : "undefined"
+            "version" : "",
+            "major"   : ""
         }
     },
     {
@@ -145,8 +145,8 @@
             "expect"  :
         {
            "name"    : "Chrome Headless",
-           "version" : "undefined",
-           "major"   : "undefined"
+           "version" : "",
+           "major"   : ""
         }
     },
     {
@@ -445,8 +445,8 @@
         "expect"  :
         {
             "name"    : "Maxthon",
-            "version" : "undefined",
-            "major"   : "undefined"
+            "version" : "",
+            "major"   : ""
         }
     },
     {
@@ -785,8 +785,8 @@
         "expect"  :
         {
             "name"    : "Slim",
-            "version" : "undefined",
-            "major"   : "undefined"
+            "version" : "",
+            "major"   : ""
         }
     },
     {
@@ -795,8 +795,8 @@
         "expect"  :
         {
             "name"    : "Swiftfox",
-            "version" : "undefined",
-            "major"   : "undefined"
+            "version" : "",
+            "major"   : ""
         }
     },
     {

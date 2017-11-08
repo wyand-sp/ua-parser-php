@@ -113,7 +113,7 @@
         "expect"  :
         {
             "name"    : "Windows Phone",
-            "version" : "undefined"
+            "version" : ""
         }
     },
     {
@@ -176,7 +176,7 @@
         "expect"  :
         {
             "name"    : "Firefox OS",
-            "version" : "undefined"
+            "version" : ""
         }
     },
     {
@@ -203,7 +203,7 @@
         "expect"  :
         {
             "name"    : "Ubuntu",
-            "version" : "undefined"
+            "version" : ""
         }
     },
     {
@@ -212,7 +212,7 @@
         "expect"  :
         {
             "name"    : "iOS",
-            "version" : "undefined"
+            "version" : ""
         }
     },
     {
@@ -230,7 +230,7 @@
         "expect"  :
         {
             "name"    : "iOS",
-            "version" : "undefined"
+            "version" : ""
         }
     },
     {
