@@ -184,6 +184,15 @@ class UAParser {
 			'major' => ''
 		);
 		$this->mapperRegularExpressions($browser, self::$regexes['browser']);
+		if (strtolower($browser['name']) === 'baidu') {
+			$browser['name'] = 'Baidu';
+		} else if (strtolower($browser['name']) === 'mozilla') {
+			$browser['name'] = 'Firefox';
+		} else if (strtolower($browser['name']) === 'nokiabrowser') {
+			$browser['name'] = 'Nokia Browser';
+		} else if (strtolower($browser['name']) === 'ie') {
+			$browser['name'] = 'Internet Explorer';
+		}
 		$browser['major'] = $browser['version'] == '' ? '' : self::parseMajor($browser['version']);
 		return $browser;
 	}

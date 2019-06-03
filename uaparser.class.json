@@ -48,7 +48,7 @@
     [
       [
         "name",
-        "IE"
+        "Internet Explorer"
       ],
       "version"
     ],
@@ -85,7 +85,7 @@
     [
       [
         "name",
-        "UCBrowser"
+        "UC Browser"
       ],
       "version"
     ],
@@ -103,14 +103,20 @@
       "/(QQ)\\/([\\d\\.]+)/i"
     ],
     [
-      "name",
+      [
+        "name",
+        "QQ Browser"
+      ],
       "version"
     ],
     [
       "/m?(qqbrowser)[\\/\\s]?([\\w\\.]+)/i"
     ],
     [
-      "name",
+      [
+        "name",
+        "QQ Browser"
+      ],
       "version"
     ],
     [
