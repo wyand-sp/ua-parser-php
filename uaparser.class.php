@@ -73,7 +73,8 @@ class UAParser {
 	 */
 	private static function parseMajor($version) {
 		if (gettype($version) === 'string') {
-			return explode('.', preg_replace('/[^\d\.]/', '', $version))[0];
+			$exploded = explode('.', preg_replace('/[^\d\.]/', '', $version));
+			return $exploded[0];
 		}
 		return '';
 	}
