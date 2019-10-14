@@ -518,7 +518,7 @@
         "expect": {
             "vendor": "Generic",
             "model": "Android 6.0.1",
-			"type": ""
+			"type": "mobile"
         }
     },
     {

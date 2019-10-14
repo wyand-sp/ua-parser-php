@@ -221,6 +221,10 @@ class UAParser {
 			'type' => ''
 		);
 		$this->mapperRegularExpressions($device, self::$regexes['device']);
+		$os = $this->getOS();
+		if ($device['type'] === '' && $os['name'] === 'Android') {
+			$device['type'] = 'mobile';
+		}
 		return $device;
 	}
 
