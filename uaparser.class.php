@@ -226,6 +226,9 @@ class UAParser {
 			$device['vendor'] = 'Generic Android';
 			$device['type'] = 'mobile';
 		}
+		if (strpos($device['model'], ';') !== false) {
+			$device['model'] = substr($device['model'], 0, strpos($device['model'], ';'));
+		}
 		return $device;
 	}
 
