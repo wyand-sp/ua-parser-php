@@ -369,6 +369,14 @@
   ],
   "device": [
     [
+      "/mozilla\\/5.0 \\(linux; ; \\) applewebkit\\/ \\(khtml, like gecko\\) chrome\\/ mobile safari\\//i"
+    ],
+    [
+      ["model", "Unknown"],
+      ["vendor", "Generic Android"],
+      ["type", "mobile"]
+    ],
+    [
       "/\\((ipad|playbook);[\\w\\s\\);-]+(rim|apple)/i"
     ],
     [
@@ -1416,6 +1424,13 @@
         "BlackBerry"
       ],
       "version"
+    ],
+    [
+      "/mozilla\\/5.0 \\(linux; ; \\) applewebkit\\/ \\(khtml, like gecko\\) chrome\\/ mobile safari\\//i"
+    ],
+    [
+      ["name", "Android"],
+      ["version", "Unknown"]
     ],
     [
       "/(blackberry)\\w*\\/?([\\w\\.]+)*/i",

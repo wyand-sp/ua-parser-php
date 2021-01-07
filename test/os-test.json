@@ -277,5 +277,14 @@
             "name"    : "Android",
             "version" : "4.2.1"
         }
+    },
+	{
+        "desc"    : "Android hiding everything",
+        "ua"      : "Mozilla/5.0 (Linux; ; ) AppleWebKit/ (KHTML, like Gecko) Chrome/ Mobile Safari/",
+        "expect"  :
+        {
+            "name"    : "Android",
+            "version" : "Unknown"
+        }
     }
 ]

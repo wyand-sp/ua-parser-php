@@ -817,5 +817,14 @@
             "model": "Android 6.0",
             "type": "mobile"
         }
-    }
+    },
+	{
+		"desc": "Android hiding everything",
+		"ua": "Mozilla/5.0 (Linux; ; ) AppleWebKit/ (KHTML, like Gecko) Chrome/ Mobile Safari/",
+		"expect": {
+			"vendor": "Generic Android",
+			"model": "Unknown",
+			"type": "mobile"
+		}
+	}
 ]
