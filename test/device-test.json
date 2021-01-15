@@ -826,5 +826,14 @@
 			"model": "Unknown",
 			"type": "mobile"
 		}
+	},
+	{
+		"desc": "Samsung Browser",
+		"ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.1 Chrome/79.0.3945.136 Safari/537.36",
+		"expect": {
+			"vendor": "Samsung",
+			"model": "Unknown",
+			"type": "mobile"
+		}
 	}
 ]
