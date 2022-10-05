@@ -1,4 +1,5 @@
-[{
+[
+    {
         "desc": "Asus Nexus 7",
         "ua": "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36",
         "expect": {
@@ -145,6 +146,15 @@
     {
         "desc": "iPhone",
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53",
+        "expect": {
+            "vendor": "Apple",
+            "model": "iPhone",
+            "type": "mobile"
+        }
+    },
+    {
+        "desc": "iPhone (facebook browser)",
+        "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19G82 [FBAN/FBIOS;FBDV/iPhone14,2;FBMD/iPhone;FBSN/iOS;FBSV/15.6.1;FBSS/3;FBID/phone;FBLC/en_GB;FBOP/5]",
         "expect": {
             "vendor": "Apple",
             "model": "iPhone",
@@ -511,14 +521,13 @@
             "type": "mobile"
         }
     },
-
     {
         "desc": "Generic Android Device",
         "ua": "Mozilla/5.0  (Linux; U; Android 6.0.1; i980 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
         "expect": {
             "vendor": "Generic Android",
             "model": "Android 6.0.1",
-			"type": "mobile"
+            "type": "mobile"
         }
     },
     {
@@ -818,22 +827,22 @@
             "type": "mobile"
         }
     },
-	{
-		"desc": "Android hiding everything",
-		"ua": "Mozilla/5.0 (Linux; ; ) AppleWebKit/ (KHTML, like Gecko) Chrome/ Mobile Safari/",
-		"expect": {
-			"vendor": "Generic Android",
-			"model": "Unknown",
-			"type": "mobile"
-		}
-	},
-	{
-		"desc": "Samsung Browser",
-		"ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.1 Chrome/79.0.3945.136 Safari/537.36",
-		"expect": {
-			"vendor": "Samsung",
-			"model": "Unknown",
-			"type": "mobile"
-		}
-	}
+    {
+        "desc": "Android hiding everything",
+        "ua": "Mozilla/5.0 (Linux; ; ) AppleWebKit/ (KHTML, like Gecko) Chrome/ Mobile Safari/",
+        "expect": {
+            "vendor": "Generic Android",
+            "model": "Unknown",
+            "type": "mobile"
+        }
+    },
+    {
+        "desc": "Samsung Browser",
+        "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.1 Chrome/79.0.3945.136 Safari/537.36",
+        "expect": {
+            "vendor": "Samsung",
+            "model": "Unknown",
+            "type": "mobile"
+        }
+    }
 ]

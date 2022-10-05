@@ -83,6 +83,8 @@ class UAParser {
 			[['name', 'QQ Browser'], 'version'],
 			['/xiaomi\\/miuibrowser\\/([\\w\\.]+)/i'],
 			['version', ['name', 'MIUI Browser']],
+			['/;fbsv\\/([\\w\\.]+);/i'],
+			['version', ['name', 'Facebook app browser']],
 			['/;fbav\\/([\\w\\.]+);/i'],
 			['version', ['name', 'Facebook app browser']],
 			['/headlesschrome(?:\\/([\\w\\.]+)|\\s)/i'],
