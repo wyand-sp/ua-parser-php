@@ -56,6 +56,8 @@ class UAParser {
 			[['name', 'Opera Mini'], 'version'],
 			['/\\s(opr)\\/([\\w\\.]+)/i'],
 			[['name', 'Opera'], 'version'],
+			['/\\s(opt)\\/([\\w\\.]+)/i'],
+			[['name', 'Opera'], 'version'],
 			[
 				'/(kindle)\\/([\\w\\.]+)/i',
 				'/(lunascape|maxthon|netfront|jasmine|blazer)[\\/\\s]?([\\w\\.]+)*/i',
@@ -87,6 +89,8 @@ class UAParser {
 			['version', ['name', 'Facebook app browser']],
 			['/;fbav\\/([\\w\\.]+);/i'],
 			['version', ['name', 'Facebook app browser']],
+			['/\\s(instagram)\\s([\\w\\.]+)/i'],
+			[['name', 'Instagram app browser'], 'version'],
 			['/headlesschrome(?:\\/([\\w\\.]+)|\\s)/i'],
 			['version', ['name', 'Chrome Headless']],
 			['/\\swv\\).+(chrome)\\/([\\w\\.]+)/i'],
