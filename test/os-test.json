@@ -156,7 +156,7 @@
         "ua": "Mozilla/5.0 (Mobile; rv:14.0) Gecko/14.0 Firefox/14.0",
         "expect": {
             "name": "Firefox OS",
-            "version": ""
+            "version": "14.0"
         }
     },
     {

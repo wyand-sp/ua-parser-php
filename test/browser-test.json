@@ -229,8 +229,8 @@
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 [FBAN/FBIOS;FBAV/91.0.0.41.73;FBBV/57050710;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0])",
         "expect": {
             "name": "Facebook app browser",
-            "version": "10.3.1",
-            "major": "10"
+            "version": "91.0.0.41.73",
+            "major": "91"
         }
     },
     {
@@ -238,15 +238,15 @@
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19G82 [FBAN/FBIOS;FBDV/iPhone14,2;FBMD/iPhone;FBSN/iOS;FBSV/15.6.1;FBSS/3;FBID/phone;FBLC/en_GB;FBOP/5]",
         "expect": {
             "name": "Facebook app browser",
-            "version": "15.6.1",
-            "major": "15"
+            "version": "",
+            "major": ""
         }
     },
     {
         "desc": "Instagram in-App Browser for iOS",
         "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone12,8; iOS 16_0; en_BG; en-BG; scale=2.00; 750x1334; 401726258) ",
         "expect": {
-            "name": "Instagram app browser",
+            "name": "Instagram",
             "version": "254.0.0.15.109",
             "major": "254"
         }
