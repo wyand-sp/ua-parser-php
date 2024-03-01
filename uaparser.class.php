@@ -1,7 +1,6 @@
 <?php
 /**
  * Standalone PHP class to identify browser, engine, OS, CPU, and device type/model based on the User Agent.
- * All detection rules are based on regular expressions stored in uaparser.class.json.
  * If a user agent is not provided to the constructor - it will be auto-detected by PHP.
  * If a user agent is provided to the constructor - it will be used.
  */
@@ -41,7 +40,6 @@ class UAParser {
 
 	/**
 	 * Private static variable used to store all regular expressions used to determine browser, device, os, etc.
-	 * It is filled with contents from the JSON file when the class is used at least once.
 	 */
 	private static $regexes = [
 		'browser' => [
