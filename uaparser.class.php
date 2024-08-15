@@ -128,7 +128,7 @@ class UAParser {
 			['/(chrome|omniweb|arora|[tizenoka]{5} ?browser)\\/v?([\\w\\.]+)/i'],
 			['name', 'version'],
 			['/version\\/([\\w\\.\\,]+) .*mobile\\/\\w+ (safari)/i'],
-			['version', ['name', 'Mobile Safari']],
+			['version', ['name', 'Safari']],
 			['/version\\/([\\w(\\.|\\,)]+) .*(mobile ?safari|safari)/i'],
 			['version', 'name'],
 			['/webkit.+?(mobile ?safari|safari)(\\/[\\w\\.]+)/i'],
